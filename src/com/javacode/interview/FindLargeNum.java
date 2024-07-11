@@ -14,6 +14,15 @@ public class FindLargeNum {
 		Arrays.sort(a);
 		System.out.println(Arrays.toString(a));
 		System.out.println("max value is " + a[a.length-1]);
+		
+		int large=a[0];
+		
+		for(int i=1;i<a.length;i++)
+		{
+			if(a[i]>large)
+				large=a[i];
+		}
+		System.out.println("large number with out sorting is "  + large);
 	}
 
 }
